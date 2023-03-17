@@ -71,6 +71,7 @@ header {
 nav {
     display: flex;
     text-transform: capitalize;
+    flex-wrap: nowrap;
 }
 
 h2,
@@ -93,7 +94,6 @@ nav img {
     text-align: center;
     display: flex;
     list-style-type: none;
-    flex-direction: row;
     flex-wrap: wrap;
     align-content: stretch;
     justify-content: space-between;
@@ -106,7 +106,6 @@ nav img {
 .nav-right {
     flex: 20%;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
     justify-content: space-evenly;
@@ -203,7 +202,6 @@ nav img {
 }
 .top-products {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0;
@@ -265,10 +263,10 @@ h4 {
 }
 .n-arrival {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    gap: 20px;
 }
 .n-arrival-product {
     width: 250px;
@@ -293,6 +291,9 @@ h4 {
     color: white;
     font-weight: 500;
     text-transform: capitalize;
+}
+.blank-div {
+    display: none;
 }
 .about-us-sec {
     background-image: linear-gradient(rgba(77, 84, 99, 0.1), rgba(0, 0, 0, 0.1)), url(../images/collection/sofa-collection-banner.jpg);
@@ -330,7 +331,6 @@ h4 {
 }
 .feat-products-cards {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
@@ -357,7 +357,6 @@ h4 {
 }
 .blog-cards {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
@@ -383,7 +382,6 @@ h4 {
 }
 .all-clients {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 50px 0;
@@ -446,7 +444,6 @@ h4 {
 }
 .social-links {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -518,10 +515,7 @@ h4 {
 }
 @media (max-width: 700px) {
     nav {
-        display: flex;
-        text-transform: capitalize;
         flex-direction: column;
-        flex-wrap: nowrap;
     }
     .nav-left {
         text-align: center;
@@ -588,7 +582,6 @@ h4 {
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        gap: 20px;
     }
     .sale-tag p {
         font-size: 0.7rem;
