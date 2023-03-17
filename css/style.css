@@ -294,9 +294,6 @@ h4 {
     font-weight: 500;
     text-transform: capitalize;
 }
-.n-arrival div {
-    margin-bottom: 20px;
-}
 .about-us-sec {
     background-image: linear-gradient(rgba(77, 84, 99, 0.1), rgba(0, 0, 0, 0.1)), url(../images/collection/sofa-collection-banner.jpg);
     background-position: center;
@@ -309,6 +306,7 @@ h4 {
     color: white;
     z-index: 3;
     position: relative;
+    width: 80%;
 }
 .abt-us-overlay {
     width: 30%;
@@ -322,6 +320,7 @@ h4 {
 .more-about-us h2,
 .more-about-us button {
     margin: 30px auto;
+    text-transform: capitalize;
 }
 .featured-products {
     text-align: center;
@@ -589,7 +588,13 @@ h4 {
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+        gap: 20px;
     }
+    .sale-tag p {
+        font-size: 0.7rem;
+        font-weight: 400;
+    }
+    
     .about-us-sec {
         padding: 100px 0px;
     }
